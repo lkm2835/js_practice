@@ -28,3 +28,8 @@ if (savedUsername === null) {
 else {
     printGreetings();
 }
+
+window.onbeforeunload = function() {
+    localStorage.clear();
+    return "";
+}
